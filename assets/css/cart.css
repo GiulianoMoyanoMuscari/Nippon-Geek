@@ -1,0 +1,81 @@
+/*carrito*/
+.cart {
+  position: absolute;
+  top: 65px;
+  right: 0;
+  padding: 50px 30px;
+  background: lightcyan;
+  border-left: 1px solid blue;
+  display: none; /*Switchear a display flex*/ 
+  flex-direction: column;
+  gap: 30px;
+  height: calc(100vh - 110px);
+  overflow-y: scroll;
+  z-index: 2;
+  min-width: 375px;
+  /* Si no funciona hacer con animacion(clase open cart) */ 
+/*   transform: translate(200%);
+  transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99); */
+}
+
+/*OCULTAR BARRA DE SCROLL DEL CARRITO*/
+.cart::-webkit-scrollbar {
+  display: none;
+}
+
+.cart__title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cart__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.cart__divider {
+  margin-top: 20px;
+  border: 0.5px solid cornflowerblue;
+  width: 100%;
+}
+
+.cart__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 100%;
+}
+
+.cart__total-label {
+  font-weight: 700;
+}
+
+.cart__total-value {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.cart__btn-buy,
+.cart__btn-delete{
+  cursor: pointer;
+  padding: 10px 35px;
+  border-radius: 10px;
+  border: none;
+  transition: 0.3s all ease-out;
+}
+
+.cart__btn-buy{
+  background-color: aqua;
+}
+
+.cart__btn-delete{
+  background-color: crimson;
+}
+
+/*Toggle del carro*/
+/* .open-cart {
+  transform: translate(0%);
+  transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
+} */
