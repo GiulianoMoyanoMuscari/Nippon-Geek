@@ -1,21 +1,18 @@
 /*carrito*/
 .cart {
   position: absolute;
-  top: 65px;
-  right: 0;
+  /*top: 110px;
+  right: 0;*/
   padding: 50px 30px;
   background: lightcyan;
-  border-left: 1px solid blue;
   display: none; /*Switchear a display flex*/ 
   flex-direction: column;
   gap: 30px;
-  height: calc(100vh - 110px);
+  /*height: calc(100vh - 110px);*/
+  height: 100%;
   overflow-y: scroll;
   z-index: 2;
-  min-width: 375px;
-  /* Si no funciona hacer con animacion(clase open cart) */ 
-/*   transform: translate(200%);
-  transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99); */
+  width: 100%;
 }
 
 /*OCULTAR BARRA DE SCROLL DEL CARRITO*/
@@ -75,7 +72,6 @@
 }
 
 /*Toggle del carro*/
-/* .open-cart {
-  transform: translate(0%);
-  transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99);
-} */
+.open-cart{
+  display: flex;
+} 

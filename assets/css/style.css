@@ -15,7 +15,7 @@ header{
 }
 
 .logo{
-  width: 70%;
+  width: 250px;
   display: block;
   margin: 0 auto;
 }
@@ -31,12 +31,13 @@ header{
 
 .navbar__list{
   position: absolute;
+  left: 0px;
   top: 110px;
   width: 100%;
   height: 100vh;
   flex-direction: column;
   background-color: rgb(246, 246, 246);
-  border: 2px solid blueviolet;
+  border-top: 2px solid blueviolet;
   border-radius: 0px 0px 15px 15px;
   padding: 45px 30px;
   gap: 25px;
@@ -47,6 +48,10 @@ header{
 .navbar__list a{
   color: black;
   font-weight: 600;
+}
+
+.open-menu{
+  display: flex;
 }
 
 /* Carrito icono */ 
